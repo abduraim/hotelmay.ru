@@ -1,0 +1,33 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  outline: 1px solid red;
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    outline: 1px solid green;
+    .nav_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      text-decoration: none;
+      color: black;
+      @include transition(all .5s);
+      &:hover {
+        background-color: blue;
+      }
+    }
+  }
+  .content {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

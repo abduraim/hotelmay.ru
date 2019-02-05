@@ -1,0 +1,3 @@
+@mixin transition($to: 'all', $time: '0.3s') {
+  transition: $to $time;
+}

@@ -15,5 +15,6 @@
         <section id="main" class="section">
             Hotelmay
         </section>
+        <a href="#">Admin panel</a>
     </body>
 </html>
