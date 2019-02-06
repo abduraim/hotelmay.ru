@@ -20,14 +20,17 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="dashboard">
+<body>
 
+<div id="app">
+    <div class="dashboard">
+        @include('dashboard._navsidebar')
 
-@include('dashboard._navsidebar')
-
-<main class="content">
-    @yield('content')
-</main>
+        <main class="content">
+            @yield('content')
+        </main>
+    </div>
+</div>
 
 </body>
 </html>

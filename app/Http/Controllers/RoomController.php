@@ -14,7 +14,9 @@ class RoomController extends Controller
      */
     public function index()
     {
-        dd('Hello, world!');
+        //dd('Hello, world!');
+        $rooms = Room::all();
+        return view('dashboard.rooms.list', compact(['rooms']));
     }
 
     /**
@@ -24,7 +26,7 @@ class RoomController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.rooms.create');
     }
 
     /**
@@ -35,7 +37,7 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -57,7 +59,7 @@ class RoomController extends Controller
      */
     public function edit(Room $room)
     {
-        //
+        return view('dashboard.rooms.edit', compact(['room']));
     }
 
     /**
