@@ -19,20 +19,22 @@
     </head>
     <body>
 
-        @include('modals.application')
-
         <div id="app">
-            <section id="main" class="section">
-                Hotelmay
-                <a href="#" class="btn_scroll_to" data-anchor="rooms">Scroll to rooms</a>
-                <a href="#" class="btn_show_modal" data-modal="application">Application</a>
-            </section>
-            <section id="rooms" class="section">
-                Rooms
-                @foreach($rooms as $room)
-                    <h1>{{$room->title}}</h1>
-                @endforeach
-            </section>
+
+            @include('modals.application')
+
+            @include('components.floating_menu')
+
+            @include('sections.main')
+
+            @include('sections.benefits')
+
+            @include('sections.rooms')
+
+            @include('sections.reviews')
+
+            @include('sections.contacts')
+
         </div>
 
 

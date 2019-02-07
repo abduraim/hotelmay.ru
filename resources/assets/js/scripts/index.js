@@ -24,4 +24,23 @@ $(document).ready(function () {
     })
 
 
+    var Site = function($container) {
+        var self = this;
+        self.$container = $container;
+        self.floatingMenu = new FloatingMenu($('.floating_menu', self.$container));
+        console.log(self.floatingMenu);
+        //self.floatingMenu
+    };
+
+    var FloatingMenu = function (container) {
+        var self = this;
+
+    };
+
+    new Site($('body'));
+
+
+
+
+
 });

@@ -2,6 +2,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=cyrillic');
+@import "~font-awesome/scss/font-awesome.scss";
 
 // Variables
 @import 'variables';
@@ -13,4 +14,5 @@
 // My styles
 @import "main";
 @import "modal";
+@import "floating_menu";
 @import "dashboard";
