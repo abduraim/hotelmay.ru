@@ -1,3 +1,4 @@
+// Descktop
 .floating_menu {
   //outline: 1px solid black;
   position: fixed;
@@ -5,7 +6,7 @@
   flex-direction: column;
   align-items: flex-end;
   right: 20px;
-  top: 100px;
+  top: -100%;
   .floating_menu__item {
     //outline: 1px solid red;
     text-decoration: none;
@@ -53,3 +54,29 @@
     }
   }
 }
+
+// Laptop
+@media screen and (max-width: $laptop){
+  .floating_menu {
+    //background-color: blue;
+  }
+}
+
+// Tablet
+@media screen and (max-width: $tablet){
+  .floating_menu {
+    //background-color: green;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile){
+  .floating_menu {
+    display: none;
+  }
+}
+
+
+
+
+

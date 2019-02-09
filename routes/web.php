@@ -13,6 +13,10 @@
 
 Route::get('/', 'IndexController@index');
 
+Route::post('/send_form', 'IndexController@sendForm');
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

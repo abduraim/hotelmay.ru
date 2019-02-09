@@ -12,7 +12,9 @@
 @import '~bootstrap/scss/bootstrap';
 
 // My styles
+@import "common";
 @import "main";
 @import "modal";
+@import "top_menu";
 @import "floating_menu";
 @import "dashboard";
