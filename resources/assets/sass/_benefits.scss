@@ -1,0 +1,11 @@
+.icon {
+  width: 100px;
+  svg {
+    width: 100px;
+    height: auto;
+    @include transition(all 0.5s);
+    &:hover {
+      fill: red;
+    }
+  }
+}

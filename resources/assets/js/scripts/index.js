@@ -57,24 +57,24 @@ $(document).ready(function () {
         $url = $(this).attr('action');
         $modal = $(this).closest('.modal');
         $form = $(this);
-        $form.html('<img src="/img/ajax-loader.gif">');
+        $form.slideUp();
+        $modal.find('.process').slideDown();
         $.ajax({
             type: 'POST',
             url: $url,
             data: $data,
             success: function (data) {
-                $form.html('Успешно отправлено!');
+                $modal.find('.process').slideUp();
+                $modal.find('.success').slideDown();
                 setTimeout(function () {
                     closeModal($modal);
-                }, 5000);
+                }, 3000);
             },
             error: function (data) {
                 alert('error!');
             },
         });
     });
-
-
 
 
 

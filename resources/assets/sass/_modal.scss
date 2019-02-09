@@ -20,6 +20,8 @@
     align-items: center;
     .modal_body {
       display: flex;
+      flex-direction: column;
+      //justify-content: center;
       position: relative;
       width: 30vw;
       height: auto;
@@ -39,36 +41,49 @@
           color: grey;
         }
       }
+      .process {
+        display: none;
+        text-align: center;
+      }
+      .success {
+        display: none;
+        text-align: center;
+        padding: 2rem 0rem;
+      }
     }
   }
 }
 
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  input[type=submit] {
-    height: 45px;
-    background-color: orange;
-    border: none;
-    cursor: pointer;
-    @include transition(all 0.3s);
-    outline: none;
-    &:hover {
-      background-color: green;
+
+// Laptop
+@media screen and (max-width: $laptop){
+  .modal {
+    .modal_wrapper {
+      .modal_body {
+        width: 40vw;
+      }
     }
   }
 }
 
-.input_group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-  input {
-    height: 2.5rem;
-    padding: 0rem 1rem;
-    outline: none;
-    border: 1px solid grey;
+// Tablet
+@media screen and (max-width: $tablet){
+  .modal {
+    .modal_wrapper {
+      .modal_body {
+        width: 70vw;
+      }
+    }
   }
+}
 
+// Mobile
+@media screen and (max-width: $mobile){
+  .modal {
+    .modal_wrapper {
+      .modal_body {
+        width: 90vw;
+      }
+    }
+  }
 }

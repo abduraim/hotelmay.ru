@@ -5,3 +5,33 @@
   //justify-content: center;
   //align-items: center;
 }
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  input[type=submit] {
+    height: 45px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    @include transition(all 0.3s);
+    outline: none;
+    &:hover {
+      background-color: green;
+    }
+  }
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  input {
+    height: 2.5rem;
+    padding: 0rem 1rem;
+    outline: none;
+    border: 1px solid grey;
+  }
+
+}

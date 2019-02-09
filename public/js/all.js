@@ -1,1 +1,73 @@
-$(document).ready(function(){function o(o){o.find(".modal_back").fadeOut(500),o.slideUp(300)}$(".btn_scroll_to").on("click",function(o){o.preventDefault();var t=$("#"+$(this).data("anchor"));t.length&&$("html, body").animate({scrollTop:t.offset().top},1e3)}),$(".top_menu").animate({},1e3).promise().then(function(o){$(".floating_menu").animate({top:100},1e3)}),$(".btn_show_modal").on("click",function(o){o.preventDefault(),$modalBlock=$("#"+$(this).data("modal")).closest(".modal"),$modalBlock.slideDown(500),$modalBlock.find(".modal_back").fadeIn(500)}),$(".modal_back").on("click",function(t){o($(this).closest(".modal"))}),$(".btn_close_modal").on("click",function(t){o($(this).closest(".modal"))}),$("form").on("submit",function(t){t.preventDefault(),$data=$(this).serialize(),$url=$(this).attr("action"),$modal=$(this).closest(".modal"),$form=$(this),$form.html('<img src="/img/ajax-loader.gif">'),$.ajax({type:"POST",url:$url,data:$data,success:function(t){$form.html("Успешно отправлено!"),setTimeout(function(){o($modal)},5e3)},error:function(o){alert("error!")}})})});
+$(document).ready(function () {
+
+    // Скролл до якоря
+    $('.btn_scroll_to').on('click', function (event) {
+        event.preventDefault();
+        var $anchor = $('#' + $(this).data('anchor'));
+        // Если есть такой элемент, то анимируем к нему
+        if ($anchor.length) {
+            $('html, body').animate({
+                scrollTop: $anchor.offset().top
+            }, 1000);
+        }
+    });
+
+    // Анимация появления элементов, при старте страницы
+    $('.top_menu').animate({
+        //height: 40,
+    }, 1000).promise().then(function (event) {
+        $('.floating_menu').animate({
+            top: 100
+        }, 1000);
+    });
+
+    /**
+     * Модальное окно
+     */
+    // Показать Модальное окно
+    $('.btn_show_modal').on('click', function (event) {
+        event.preventDefault();
+        $modalBlock = $('#' + $(this).data('modal')).closest('.modal');
+        $modalBlock.slideDown(500);
+        $modalBlock.find('.modal_back').fadeIn(500);
+    });
+    // Клик по фону модалки (скрытие его)
+    $('.modal_back').on('click', function (event) {
+        closeModal($(this).closest('.modal'));
+    });
+    // Клик по кнопке "закрыть" модального окна
+    $('.btn_close_modal').on('click', function (event) {
+        closeModal($(this).closest('.modal'));
+    });
+    // Функция закрытия модального окна
+    function closeModal($modal) {
+        $modal.find('.modal_back').fadeOut(500);
+        $modal.slideUp(300);
+    }
+
+    // Отправка формы
+    $('form').on('submit', function (event) {
+        event.preventDefault();
+        $data = $(this).serialize();
+        $url = $(this).attr('action');
+        $modal = $(this).closest('.modal');
+        $form = $(this);
+        $form.slideUp();
+        $modal.find('.process').slideDown();
+        $.ajax({
+            type: 'POST',
+            url: $url,
+            data: $data,
+            success: function success(data) {
+                $modal.find('.process').slideUp();
+                $modal.find('.success').slideDown();
+                setTimeout(function () {
+                    closeModal($modal);
+                }, 3000);
+            },
+            error: function error(data) {
+                alert('error!');
+            }
+        });
+    });
+});

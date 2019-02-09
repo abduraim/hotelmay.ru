@@ -15,6 +15,12 @@
                 </div>
                 <input type="submit" value="Забронировать">
             </form>
+            <div class="process">
+                <img src="{{ asset('/img/ajax-loader.gif') }}" alt="Отправка...">
+            </div>
+            <div class="success">
+                Ваша заявка успешно отправлена!
+            </div>
         </div>
     </div>
 </div>
