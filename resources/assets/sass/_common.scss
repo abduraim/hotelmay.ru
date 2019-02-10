@@ -6,6 +6,42 @@
   //align-items: center;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  padding: 10rem 0rem;
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 form {
   width: 100%;
   display: flex;
@@ -34,4 +70,12 @@ form {
     border: 1px solid grey;
   }
 
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+  }
 }

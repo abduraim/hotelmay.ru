@@ -1,11 +1,41 @@
-.icon {
-  width: 100px;
-  svg {
-    width: 100px;
-    height: auto;
-    @include transition(all 0.5s);
-    &:hover {
-      fill: red;
+.benefits_block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  //outline: 1px solid black;
+
+  .benefits_item {
+    //outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    .benefits_item__icon {
+      //outline: 1px solid green;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 70%;
+      svg {
+        width: 35%;
+        height: auto;
+        @include transition(all 0.5s);
+        &:hover {
+          fill: red;
+        }
+      }
+    }
+    .benefits_item__description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 30%;
     }
   }
 }
+
