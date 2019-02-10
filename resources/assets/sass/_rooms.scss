@@ -1,0 +1,13 @@
+.rooms_list {
+  outline: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  .rooms_item {
+    outline: 1px solid black;
+    width: 30%;
+    height: 45%;
+  }
+}
