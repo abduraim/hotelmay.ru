@@ -1,9 +1,11 @@
+html {
+  font-size: 16px;
+}
+
 .wrapper {
   width: 1140px;
   height: 100%;
   display: flex;
-  //justify-content: center;
-  //align-items: center;
 }
 
 .section {
@@ -16,7 +18,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   overflow: hidden;
-  padding: 10rem 0rem;
+  padding: 7% 0% 5%;
   .wrapper {
     flex-direction: column;
   }
@@ -29,17 +31,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 3rem;
+  font-size: 2.25rem;
+  margin-bottom: 4rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 form {
@@ -77,5 +79,33 @@ ul {
   padding: 0px;
   li {
     list-style: none;
+  }
+}
+
+// Laptop
+@media screen and (max-width: $laptop){
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+    width: 100%;
+  }
+}
+
+// Tablet
+@media screen and (max-width: $tablet){
+  html {
+    font-size: 12px;
+  }
+  .section {
+    padding-top: 10%;
+    height: auto;
+  }
+}
+
+// Mobile
+@media screen and (max-width: $mobile){
+  .wrapper {
+    padding: 0px 1.5rem;
   }
 }

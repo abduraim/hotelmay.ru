@@ -7,7 +7,7 @@
                     @include('svg.kitchen')
                 </div>
                 <div class="benefits_item__description">
-                    <h3>Апартаменты с персональной кухней</h3>
+                    <h3>Апартаменты с&nbsp;персональной кухней</h3>
                 </div>
             </li>
             <li class="benefits_item">
