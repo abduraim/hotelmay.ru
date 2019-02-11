@@ -1,13 +1,59 @@
 .rooms_list {
-  outline: 1px solid red;
+  //outline: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-content: space-between;
   height: 100%;
   .rooms_item {
-    outline: 1px solid black;
+    //outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
-    height: 45%;
+    height: 48%;
+    &.empty {
+      height: 0;
+    }
+    .rooms_title {
+      //outline: 1px solid white;
+      margin-bottom: 1rem;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5rem;
+    }
+    .rooms_photo {
+      //outline: 1px solid yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        cursor: pointer;
+        @include transition(all 1s);
+        &:hover {
+
+          max-width: 120%;
+        }
+      }
+    }
+    .rooms_cost {
+      //outline: 1px solid purple;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      font-weight: bold;
+      //display: none;
+    }
+    .rooms_description {
+      display: none;
+    }
   }
 }
