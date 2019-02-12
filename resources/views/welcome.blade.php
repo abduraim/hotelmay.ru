@@ -23,6 +23,8 @@
 
             @include('modals.application')
 
+            @include('modals.room')
+
             @include('components.top_menu')
 
             @include('components.floating_menu')

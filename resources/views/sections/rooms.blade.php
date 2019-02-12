@@ -2,50 +2,45 @@
     <div class="wrapper">
         <h1>Наши номера</h1>
         <ul class="rooms_list">
-            <li class="rooms_item">
+            <li class="rooms_item btn_show_modal" data-modal="room">
                 <div class="rooms_title"><h3>Апартаменты "Delux" с&nbsp;кухней</h3></div>
-                <div class="rooms_photo">
-                    <img src="{{ asset('/img/01.jpg') }}" alt="">
-                </div>
+                <div class="rooms_photo" style="background-image: url('{{ asset('/img/01.jpg') }}')"></div>
                 <div class="rooms_cost">1212 руб</div>
                 <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
-                <a href="#" class="button btn_show_modal">Забронировать</a>
+                <a href="#" class="button rooms_order btn_show_modal" data-modal="room">Забронировать</a>
+                <div class="rooms_eye"><i class="fa fa-eye"></i></div>
             </li>
-            <li class="rooms_item">
-                <div class="rooms_title"><h3>Трехместный Standart</h3></div>
-                <div class="rooms_photo">
-                    <img src="{{ asset('/img/01.jpg') }}" alt="">
-                </div>
-                <div class="rooms_cost">1212 rub.</div>
-                <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
-                <a href="#" class="button btn_show_modal">Забронировать</a>
-            </li>
-            <li class="rooms_item">
+            <li class="rooms_item btn_show_modal" data-modal="room">
                 <div class="rooms_title"><h3>Апартаменты "Delux" с&nbsp;кухней</h3></div>
-                <div class="rooms_photo">
-                    <img src="{{ asset('/img/01.jpg') }}" alt="">
-                </div>
-                <div class="rooms_cost">1212 rub.</div>
+                <div class="rooms_photo" style="background-image: url('{{ asset('/img/01.jpg') }}')"></div>
+                <div class="rooms_cost">1212 руб</div>
                 <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
-                <a href="#" class="button btn_show_modal">Забронировать</a>
+                <a href="#" class="button rooms_order btn_show_modal" data-modal="room">Забронировать</a>
+                <div class="rooms_eye"><i class="fa fa-eye"></i></div>
             </li>
-            <li class="rooms_item">
+            <li class="rooms_item btn_show_modal" data-modal="room">
                 <div class="rooms_title"><h3>Апартаменты "Delux" с&nbsp;кухней</h3></div>
-                <div class="rooms_photo">
-                    <img src="{{ asset('/img/01.jpg') }}" alt="">
-                </div>
-                <div class="rooms_cost">1212 rub.</div>
+                <div class="rooms_photo" style="background-image: url('{{ asset('/img/01.jpg') }}')"></div>
+                <div class="rooms_cost">1212 руб</div>
                 <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
-                <a href="#" class="button btn_show_modal">Забронировать</a>
+                <a href="#" class="button rooms_order btn_show_modal" data-modal="room">Забронировать</a>
+                <div class="rooms_eye"><i class="fa fa-eye"></i></div>
             </li>
-            <li class="rooms_item">
+            <li class="rooms_item btn_show_modal" data-modal="room">
                 <div class="rooms_title"><h3>Апартаменты "Delux" с&nbsp;кухней</h3></div>
-                <div class="rooms_photo">
-                    <img src="{{ asset('/img/01.jpg') }}" alt="">
-                </div>
-                <div class="rooms_cost">1212 rub.</div>
+                <div class="rooms_photo" style="background-image: url('{{ asset('/img/01.jpg') }}')"></div>
+                <div class="rooms_cost">1212 руб</div>
                 <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
-                <a href="#" class="button btn_show_modal">Забронировать</a>
+                <a href="#" class="button rooms_order btn_show_modal" data-modal="room">Забронировать</a>
+                <div class="rooms_eye"><i class="fa fa-eye"></i></div>
+            </li>
+            <li class="rooms_item btn_show_modal" data-modal="room">
+                <div class="rooms_title"><h3>Апартаменты "Delux" с&nbsp;кухней</h3></div>
+                <div class="rooms_photo" style="background-image: url('{{ asset('/img/01.jpg') }}')"></div>
+                <div class="rooms_cost">1212 руб</div>
+                <div class="rooms_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque eligendi id libero necessitatibus nisi numquam, quaerat reiciendis? Alias cupiditate ea eum inventore libero perspiciatis possimus quibusdam quo repudiandae veritatis?</div>
+                <a href="#" class="button rooms_order btn_show_modal" data-modal="room">Забронировать</a>
+                <div class="rooms_eye"><i class="fa fa-eye"></i></div>
             </li>
             <li class="rooms_item empty"></li>
         </ul>
