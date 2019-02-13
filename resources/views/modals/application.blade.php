@@ -15,9 +15,7 @@
                 </div>
                 <input type="submit" value="Забронировать">
             </form>
-            <div class="process">
-                <img src="{{ asset('/img/ajax-loader.gif') }}" alt="Отправка...">
-            </div>
+            <i class="fa fa-star-o fa-spin process" aria-hidden="true"></i>
             <div class="success">
                 Ваша заявка успешно отправлена!
             </div>

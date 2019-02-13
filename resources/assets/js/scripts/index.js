@@ -47,6 +47,17 @@ $(document).ready(function () {
     function closeModal($modal) {
         $modal.find('.modal_back').fadeOut(500);
         $modal.slideUp(300);
+        // Если это закрытие Модалки Номеров, то сбрасываем ее содержание
+        if ($modal.is('#room')) {
+            resetRoomModal($modal);
+        }
+    }
+
+    // Функция "обнуления" модалки с показом информации о номере
+    function resetRoomModal($modal)
+    {
+        $modal.find('.modal_content').fadeOut();
+        $modal.find('.process').show('slow');
     }
 
 
@@ -75,6 +86,27 @@ $(document).ready(function () {
             },
         });
     });
+
+
+
+    // Запрос данных через API
+    $('.get_json').on('click', function (event) {
+        // Читаем url запроса
+        url = $(this).data('json');
+
+        // Отправляем запрос
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function(response)
+            {
+                $('.modal#room').find('.process').hide();
+                $('.modal#room').find('.modal_content').fadeIn();
+                $('.modal#room').find('.room_title').text(response.title);
+                $('.modal#room').find('.room_cost').text(response.cost);
+            }
+        });
+    })
 
 
 

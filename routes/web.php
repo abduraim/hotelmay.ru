@@ -15,6 +15,8 @@ Route::get('/', 'IndexController@index');
 
 Route::post('/send_form', 'IndexController@sendForm');
 
+Route::get('/api/get_room_info/{id}', 'RoomController@apiGetRoomInfo')->name('rooms.getRoomInfo');
+
 
 
 Auth::routes();
