@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 
+require('slick-carousel');
+
 require('./scripts/index');
 
 window.Vue = require('vue');

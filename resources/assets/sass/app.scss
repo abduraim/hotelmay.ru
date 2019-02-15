@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=cyrillic');
 @import "~font-awesome/scss/font-awesome.scss";
 
+// Slick slider
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+
 // Variables
 @import 'variables';
 @import "mixins";

@@ -88,10 +88,10 @@ class RoomController extends Controller
     public function apiGetRoomInfo(Request $request)
     {
         $rooms = Room::find($request->id);
-        $a = 0;
-        for ($i = 0; $i < 500000000; $i ++) {
-            $a = $a + 1;
-        }
+//        $a = 0;
+//        for ($i = 0; $i < 500000000; $i ++) {
+//            $a = $a + 1;
+//        }
         return response()->json($rooms);
     }
 }

@@ -65,16 +65,34 @@
 }
 
 .modal#room {
-  //display: block;
+  display: block;
   .modal_wrapper {
     .modal_body {
       width: 90%;
       height: 90%;
       .modal_content {
-        display: none;
+        //display: none;
+        .room_title {
+          font-size: 2.25rem;
+          margin-bottom: 1rem;
+          text-align: center;
+          font-weight: 400;
+        }
+        .room_slider {
+          outline: 2px solid red;
+          width: 50vw;
+          height: 60vh;
+          overflow: hidden;
+        }
+        .slick-initialized .slick-slide {
+          float: none;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
       }
       .process {
-        display: block;
+        //display: block;
       }
     }
   }

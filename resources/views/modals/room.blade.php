@@ -6,6 +6,12 @@
             <i class="fa fa-star-o fa-spin process" aria-hidden="true"></i>
             <div class="modal_content">
                 <div class="room_title">Room title</div>
+                <div class="room_slider">
+                    <img src="{{ asset('/img/rooms/01.jpg') }}" alt="">
+                    <img src="{{ asset('/img/rooms/02.jpg') }}" alt="">
+                    <img src="{{ asset('/img/rooms/03.jpg') }}" alt="">
+                    <img src="{{ asset('/img/rooms/04.jpg') }}" alt="">
+                </div>
                 <div class="room_cost">Cost</div>
                 <div class="room_description">Description</div>
             </div>
