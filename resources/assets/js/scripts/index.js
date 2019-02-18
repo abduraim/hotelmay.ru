@@ -108,6 +108,24 @@ $(document).ready(function () {
         });
     });
 
+    // Яндекс-Карта в Контактах
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map("map", {
+            center: [59.933610, 30.368603],
+            zoom: 15,
+            controls: [],
+        });
+        var myPlacemark = new ymaps.Placemark([59.933610, 30.368603], {
+            balloonContent: 'ул. 7-ая Советская, д. 27',
+            iconContent: "Мини-отель Майский",
+        }, {
+            preset: "islands#redStretchyIcon",
+                // Балун будем открывать и закрывать кликом по иконке метки.
+                hideIconOnBalloonOpen: false
+        });
+        myMap.geoObjects.add(myPlacemark);
+    });
+
 
     $('.room_slider').slick({
         infinite: true,

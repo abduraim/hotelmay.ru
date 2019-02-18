@@ -1,0 +1,19 @@
+// Desctop
+section#main {
+  background-color: yellowgreen;
+}
+
+// Laptop
+@media screen and (max-width: $laptop){
+
+}
+
+// Tablet
+@media screen and (max-width: $tablet){
+
+}
+
+// Mobile
+@media screen and (max-width: $mobile){
+
+}

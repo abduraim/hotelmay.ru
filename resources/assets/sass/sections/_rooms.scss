@@ -1,3 +1,7 @@
+// Desktop
+section#rooms {
+  background-color: #fff;
+}
 .rooms_list {
   //outline: 1px solid red;
   display: flex;
@@ -113,4 +117,19 @@
       }
     }
   }
+}
+
+// Laptop
+@media screen and (max-width: $laptop){
+
+}
+
+// Tablet
+@media screen and (max-width: $tablet){
+
+}
+
+// Mobile
+@media screen and (max-width: $mobile){
+
 }

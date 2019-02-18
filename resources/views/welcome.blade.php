@@ -16,12 +16,19 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
 
+        {{--Яндекс-Карты--}}
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=0c899a97-2189-44c3-a655-4dd2dae05ef5
+&lang=ru_RU" type="text/javascript">
+        </script>
+
     </head>
     <body>
 
         <div id="app">
 
             @include('modals.application')
+
+            @include('modals.poll')
 
             @include('modals.room')
 

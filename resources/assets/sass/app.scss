@@ -17,10 +17,12 @@
 
 // My styles
 @import "common";
-@import "main";
-@import "benefits";
-@import "rooms";
-@import "modal";
-@import "top_menu";
-@import "floating_menu";
+@import "sections/main";
+@import "sections/benefits";
+@import "sections/rooms";
+@import "sections/reviews";
+@import "sections/contacts";
+@import "components/modal";
+@import "components/top_menu";
+@import "components/floating_menu";
 @import "dashboard";
